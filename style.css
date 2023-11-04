@@ -1,16 +1,11 @@
 :root {
-  --White: hsl(0, 0%, 100%);
   --Light-Grey: hsl(217, 12%, 63%);
-  --Medium-Grey: hsl(216, 12%, 54%);
   --buttonBg: hsla(217, 12%, 63%, 0.13);
-  --Dark-Blue: hsl(213, 19%, 18%);
-  --Very-Dark-Blue: hsl(216, 12%, 8%);
 }
 body {
   box-sizing: border-box;
   padding: 0;
   margin: auto;
-  width: 1440px;
   background-color: #141519;
   color: var(--Light-Grey);
 }
@@ -40,7 +35,7 @@ article {
   border-radius: 50px;
 }
 h1 {
-  color: var(--White);
+  color: #ffffff;
   margin-top: 25px;
 }
 p {
