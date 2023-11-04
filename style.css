@@ -1,0 +1,130 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --buttonBg: hsla(217, 12%, 63%, 0.13);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+  width: 1440px;
+  background-color: #141519;
+  color: var(--Light-Grey);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+article {
+  width: 350px;
+  background-image: linear-gradient(
+    to bottom,
+    #222933,
+    #1f2630,
+    #1c232d,
+    #1a212b,
+    #171e28
+  );
+  padding: 40px;
+  border-radius: 20px;
+}
+.stars {
+  background-color: var(--buttonBg);
+  padding: 12px;
+  border-radius: 50px;
+}
+h1 {
+  color: var(--White);
+  margin-top: 25px;
+}
+p {
+  line-height: 22px;
+}
+.rate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.rate-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  width: 25px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  border: 0;
+  background-color: #262f38;
+  color: #ffff;
+}
+.rate-btn:hover {
+  background-color: #7d8798;
+}
+.error-btn {
+  text-align: center;
+  color: rgb(237, 100, 100);
+  visibility: hidden;
+  margin: 10px;
+}
+.active,
+.active:hover {
+  background-color: #f57215;
+}
+
+.submit {
+  display: block;
+  width: 100%;
+  background-color: #f57215;
+  color: white;
+  border: 0;
+  padding: 15px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.submit:hover {
+  background-color: #ffffff;
+  color: orange;
+}
+.result p:first-of-type {
+  color: #cb7742;
+  margin: auto;
+  width: fit-content;
+  margin-top: 30px;
+  background-color: #262e38;
+  padding: 10px;
+  border-radius: 15px;
+}
+.result h1 {
+  text-align: center;
+}
+.result p:last-of-type {
+  text-align: center;
+}
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.thanks-svg {
+  display: block;
+  margin: auto;
+}
+.request {
+  display: flex;
+}
+.result {
+  display: none;
+}
